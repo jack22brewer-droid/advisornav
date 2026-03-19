@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Your Company's 401(k) Plan Costing Employees Too Much? | AdvisorNav</title>
+    <meta name="description" content="High 401(k) fees silently drain retirement savings. Learn how to identify excessive plan costs and understand transparent fee structures to avoid ERISA liability.">
+    <meta property="og:title" content="Is Your Company's 401(k) Plan Costing Employees Too Much? | AdvisorNav">
+    <meta property="og:description" content="High 401(k) fees silently drain retirement savings. Learn how to identify excessive plan costs and understand transparent fee structures.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://advisornav.com/blog/is-your-company-401k-plan-costing-employees-too-much.html">
+    <meta property="og:image" content="https://advisornav.com/og-image.jpg">
+    <meta property="article:author" content="AdvisorNav">
+    <meta property="article:published_time" content="2026-03-19">
+    <link rel="canonical" href="https://advisornav.com/blog/is-your-company-401k-plan-costing-employees-too-much.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0a1628;
+            --navy-light: #0f1f3a;
+            --navy-mid: #162a4a;
+            --gold: #c9a84c;
+            --gold-light: #d4b96a;
+            --white: #ffffff;
+            --gray-100: #e8e6e1;
+            --gray-300: #b0ada5;
+            --gray-500: #6b6860;
+            --font-sans: 'Inter', sans-serif;
+            --font-serif: 'Playfair Display', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--white);
+            background-color: var(--navy);
+            line-height: 1.8;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--navy-light);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--navy-mid);
+        }
+
+        .nav-logo {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+
+        .nav-logo:hover {
+            color: var(--gold-light);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold-light);
+        }
+
+        /* Article Layout */
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+        }
+
+        .article-header h1 {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            color: var(--white);
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--navy-mid);
+            color: var(--gray-300);
+            font-size: 0.9rem;
+        }
+
+        .article-content {
+            margin: 2rem 0;
+        }
+
+        .article-content h2 {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            color: var(--gold);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .article-content h3 {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            color: var(--gold-light);
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.2rem;
+            color: var(--gray-100);
+            line-height: 1.8;
+        }
+
+        .article-content ul {
+            margin: 1.5rem 0 1.5rem 2rem;
+            color: var(--gray-100);
+        }
+
+        .article-content li {
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+        }
+
+        .article-content strong {
+            color: var(--gold-light);
+        }
+
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, var(--navy-mid) 0%, var(--navy) 100%);
+            border: 2px solid var(--gold);
+            border-radius: 8px;
+            padding: 2.5rem 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            font-family: var(--font-serif);
+            color: var(--gold);
+            margin-bottom: 0.8rem;
+            font-size: 1.4rem;
+        }
+
+        .cta-box p {
+            margin-bottom: 1.5rem;
+            color: var(--gray-100);
+            font-size: 0.95rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--gold);
+            color: var(--navy);
+            padding: 0.9rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--gold);
+        }
+
+        .cta-button:hover {
+            background-color: transparent;
+            color: var(--gold);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--navy-light);
+            border-top: 1px solid var(--navy-mid);
+            padding: 2rem;
+            text-align: center;
+            color: var(--gray-300);
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 2rem 1rem;
+            }
+
+            .article-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .article-content h2 {
+                font-size: 1.3rem;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="nav-logo">AdvisorNav</a>
+        <ul class="nav-links">
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/#assessment">Take Assessment</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <header class="article-header">
+                <h1>Is Your Company's 401(k) Plan Costing Employees Too Much?</h1>
+                <div class="article-meta">
+                    <span>March 19, 2026</span>
+                    <span>6 min read</span>
+                </div>
+            </header>
+
+            <div class="article-content">
+                <p>
+                    Every quarter, your company's retirement plan fees tick away quietly—often without anyone paying close attention. While a 0.5% annual fee might sound trivial, it compounds into tens of thousands of dollars lost from employee retirement savings over a career. The question isn't just whether your plan has fees, but whether those fees are justified and transparent.
+                </p>
+
+                <p>
+                    For HR directors, understanding 401(k) plan costs is no longer optional. The Department of Labor (DOL) has made it clear: fiduciaries have a duty to ensure their plans are being run at a reasonable cost. Ignorance isn't a defense. In this guide, we'll break down how to identify excessive fees, understand different fee structures, and what "revenue neutral" truly means.
+                </p>
+
+                <h2>What Makes a 401(k) Plan "Expensive"?</h2>
+
+                <p>
+                    A 401(k) plan's total cost includes three components: investment management fees (paid to fund managers), administrative fees (plan administration, compliance, payroll processing), and advisor fees (if you have an advisor managing the plan). Most plans charge between 0.5% and 1.5% of assets annually, but this doesn't tell the whole story.
+                </p>
+
+                <p>
+                    Consider this: if your company has $10 million in retirement assets, a seemingly modest 1% annual fee amounts to $100,000 per year. Over a 25-year employee tenure, that 1% fee could reduce an individual's retirement balance by 25% compared to a lower-cost plan. For your employees, that's a material impact on their retirement security.
+                </p>
+
+                <h3>The "Hidden Fees" Problem</h3>
+
+                <p>
+                    Many plan sponsors don't realize they're paying layered fees. A typical arrangement might look like this: the plan pays the recordkeeper a flat fee, employees pay the fund managers through expense ratios embedded in mutual fund prices, and nobody clearly discloses that there's also an advisor fee buried in the structure. This lack of transparency is exactly what regulators are cracking down on.
+                </p>
+
+                <h2>Revenue Neutral vs. Transparent Fee Structures</h2>
+
+                <p>
+                    Understanding fee structures requires knowing the difference between "revenue neutral" and "transparent" models. These terms are critical in evaluating whether your plan is truly cost-effective.
+                </p>
+
+                <h3>Revenue Neutral Arrangements</h3>
+
+                <p>
+                    In a revenue neutral arrangement, the plan sponsor receives credits that offset administrative costs. Typically, investment providers grant credits based on the plan's assets or participant count. For example, you might receive $50,000 in annual credits that reduce your out-of-pocket administrative expenses to near zero. This sounds great on paper, but it's problematic for several reasons:
+                </p>
+
+                <ul>
+                    <li><strong>Employees still pay.</strong> The credits don't reduce the investment fees employees pay in their fund expense ratios. Those costs remain embedded and invisible.</li>
+                    <li><strong>Transparency is limited.</strong> With credits masking costs, plan sponsors often don't know the true economic value they're receiving—or how competitive it actually is.</li>
+                    <li><strong>ERISA compliance risk.</strong> Regulators have increasingly scrutinized "revenue neutral" arrangements, questioning whether the credits truly reflect market rates and whether fees are being monitored.</li>
+                </ul>
+
+                <h3>Transparent Fee Structures</h3>
+
+                <p>
+                    A transparent fee structure discloses all costs clearly and separately. You pay explicit fees for each service: $X for recordkeeping, $Y for administration, and $Z for investment management (and any advisor fees). This approach has advantages:
+                </p>
+
+                <ul>
+                    <li><strong>Complete visibility.</strong> You see every cost and can compare it to other plans and industry benchmarks.</li>
+                    <li><strong>Easier compliance monitoring.</strong> Transparent structures make it simpler to document that your plan's fees are reasonable—essential for fiduciary liability protection.</li>
+                    <li><strong>Employee-focused alignment.</strong> Employees benefit from lower-cost fund options and clear disclosure of what they're paying.</li>
+                </ul>
+
+                <h2>The ERISA Fiduciary Liability Risk</h2>
+
+                <p>
+                    As a plan sponsor, you're a fiduciary under the Employee Retirement Income Security Act (ERISA). That means you have a legal duty to ensure your plan is being run in the best interests of participants and beneficiaries—including managing costs prudently.
+                </p>
+
+                <p>
+                    The DOL has made it clear: simply accepting whatever your current advisor or provider charges is not enough. You must actively monitor and benchmark fees. Recent lawsuits against major plan sponsors—including notable class actions—have established that fiduciaries can be held liable for excessive fees, even if they weren't intentionally negligent. Juries have awarded millions in damages to employees for failure to monitor costs.
+                </p>
+
+                <p>
+                    What protects you? Documented evidence that you've compared your plan's fees to industry benchmarks, considered alternative arrangements, and made informed decisions. If you can't point to this documentation, you're exposed.
+                </p>
+
+                <h2>How to Tell If Your Fees Are Too High</h2>
+
+                <p>
+                    Start with these three steps:
+                </p>
+
+                <ul>
+                    <li><strong>Get a fee benchmark analysis.</strong> Compare your plan's total cost (including all hidden and embedded fees) to similar-sized plans in your industry. Industry benchmarks from NEPC, Callan, or similar firms provide context.</li>
+                    <li><strong>Calculate the real impact.</strong> Work with your advisor or a third-party analyst to show what high fees cost your employees over time. The math often opens eyes.</li>
+                    <li><strong>Request competitive proposals.</strong> Ask at least two other providers to submit proposals for your plan. You don't have to switch, but you'll get market-rate pricing data that validates your current arrangement.</li>
+                </ul>
+
+                <h2>What You Should Do Now</h2>
+
+                <p>
+                    If your plan hasn't been formally reviewed in more than three years, or if you're unable to clearly articulate why your current fee structure is reasonable, it's time to take action. A comprehensive plan review includes benchmarking costs, evaluating fund options, reviewing compliance, and ensuring you have documented fiduciary processes in place.
+                </p>
+
+                <p>
+                    The stakes are high: excessive fees harm employee retirement security, and fiduciaries who fail to monitor costs face legal exposure. The good news is that a proactive approach—combining cost transparency, regular monitoring, and documented decision-making—protects both your employees and your organization.
+                </p>
+
+                <div class="cta-box">
+                    <h3>Ready to Benchmark Your Plan?</h3>
+                    <p>Get a free, confidential analysis of your 401(k) plan fees. We'll show you exactly what your plan costs and how it compares to market rates.</p>
+                    <a href="/#contact" class="cta-button">Book Free Plan Benchmarking</a>
+                </div>
+
+                <p>
+                    <strong>Key Takeaway:</strong> Your 401(k) plan's total cost—not just the headline fee rate—matters enormously for employee retirement security and your ERISA compliance. Transparent fee structures, regular benchmarking, and documented fiduciary oversight are your best defense against liability and your best service to your employees.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AdvisorNav. All rights reserved.</p>
+        <p>Helping HR directors optimize 401(k) plans and ensure ERISA compliance.</p>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Is Your Company's 401(k) Plan Costing Employees Too Much?",
+        "description": "High 401(k) fees silently drain retirement savings. Learn how to identify excessive plan costs and understand transparent fee structures to avoid ERISA liability.",
+        "image": "https://advisornav.com/og-image.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "AdvisorNav"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "AdvisorNav",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://advisornav.com/logo.png"
+            }
+        },
+        "datePublished": "2026-03-19",
+        "dateModified": "2026-03-19"
+    }
+    </script>
+</body>
+</html>

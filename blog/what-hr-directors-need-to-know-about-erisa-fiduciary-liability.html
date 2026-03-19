@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What HR Directors Need to Know About ERISA Fiduciary Liability | AdvisorNav</title>
+    <meta name="description" content="Understanding ERISA fiduciary duty is essential for HR directors managing 401(k) plans. Learn what fiduciary liability means, recent lawsuits, and how to protect your organization.">
+    <meta property="og:title" content="What HR Directors Need to Know About ERISA Fiduciary Liability | AdvisorNav">
+    <meta property="og:description" content="Understanding ERISA fiduciary duty is essential for HR directors managing 401(k) plans. Learn what fiduciary liability means and how to protect your organization.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://advisornav.com/blog/what-hr-directors-need-to-know-about-erisa-fiduciary-liability.html">
+    <meta property="og:image" content="https://advisornav.com/og-image.jpg">
+    <meta property="article:author" content="AdvisorNav">
+    <meta property="article:published_time" content="2026-03-15">
+    <link rel="canonical" href="https://advisornav.com/blog/what-hr-directors-need-to-know-about-erisa-fiduciary-liability.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0a1628;
+            --navy-light: #0f1f3a;
+            --navy-mid: #162a4a;
+            --gold: #c9a84c;
+            --gold-light: #d4b96a;
+            --white: #ffffff;
+            --gray-100: #e8e6e1;
+            --gray-300: #b0ada5;
+            --gray-500: #6b6860;
+            --font-sans: 'Inter', sans-serif;
+            --font-serif: 'Playfair Display', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--white);
+            background-color: var(--navy);
+            line-height: 1.8;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--navy-light);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--navy-mid);
+        }
+
+        .nav-logo {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+
+        .nav-logo:hover {
+            color: var(--gold-light);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold-light);
+        }
+
+        /* Article Layout */
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+        }
+
+        .article-header h1 {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            color: var(--white);
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--navy-mid);
+            color: var(--gray-300);
+            font-size: 0.9rem;
+        }
+
+        .article-content {
+            margin: 2rem 0;
+        }
+
+        .article-content h2 {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            color: var(--gold);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .article-content h3 {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            color: var(--gold-light);
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.2rem;
+            color: var(--gray-100);
+            line-height: 1.8;
+        }
+
+        .article-content ul {
+            margin: 1.5rem 0 1.5rem 2rem;
+            color: var(--gray-100);
+        }
+
+        .article-content li {
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+        }
+
+        .article-content strong {
+            color: var(--gold-light);
+        }
+
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, var(--navy-mid) 0%, var(--navy) 100%);
+            border: 2px solid var(--gold);
+            border-radius: 8px;
+            padding: 2.5rem 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            font-family: var(--font-serif);
+            color: var(--gold);
+            margin-bottom: 0.8rem;
+            font-size: 1.4rem;
+        }
+
+        .cta-box p {
+            margin-bottom: 1.5rem;
+            color: var(--gray-100);
+            font-size: 0.95rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--gold);
+            color: var(--navy);
+            padding: 0.9rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--gold);
+        }
+
+        .cta-button:hover {
+            background-color: transparent;
+            color: var(--gold);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--navy-light);
+            border-top: 1px solid var(--navy-mid);
+            padding: 2rem;
+            text-align: center;
+            color: var(--gray-300);
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 2rem 1rem;
+            }
+
+            .article-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .article-content h2 {
+                font-size: 1.3rem;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="nav-logo">AdvisorNav</a>
+        <ul class="nav-links">
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/#assessment">Take Assessment</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <header class="article-header">
+                <h1>What HR Directors Need to Know About ERISA Fiduciary Liability</h1>
+                <div class="article-meta">
+                    <span>March 15, 2026</span>
+                    <span>7 min read</span>
+                </div>
+            </header>
+
+            <div class="article-content">
+                <p>
+                    If you manage your company's 401(k) plan, you're a fiduciary. That word carries significant legal weight. Being a fiduciary means you've accepted a legal duty to manage the plan in the best interests of participants—and if you fail that duty, you can be held personally liable for damages. Understanding ERISA fiduciary duty isn't optional for HR directors; it's essential protection for both your employees and yourself.
+                </p>
+
+                <p>
+                    Yet many HR leaders operate their plans without fully understanding what fiduciary responsibility actually means or the specific actions required to satisfy it. This gap between understanding and practice is where litigation risk grows. In this article, we'll explain ERISA in plain English, review recent landmark lawsuits, and outline concrete steps to protect your organization.
+                </p>
+
+                <h2>What Is a Fiduciary? Plain English Version</h2>
+
+                <p>
+                    A fiduciary is someone (or an organization) that manages someone else's money or assets with legal obligation to act in their best interest. In 401(k) terms, participants entrust their retirement savings to you and your plan's service providers. Being a fiduciary means you must:
+                </p>
+
+                <ul>
+                    <li><strong>Act prudently.</strong> Make decisions as a reasonably prudent person would, based on facts and circumstances available to you.</li>
+                    <li><strong>Manage costs.</strong> Ensure plan administrative and investment fees are reasonable and competitive relative to similar plans.</li>
+                    <li><strong>Select capable advisors and vendors.</strong> Choose service providers (investment advisors, recordkeepers, custodians) based on their qualifications and fees, not convenience or personal relationships.</li>
+                    <li><strong>Monitor ongoing performance.</strong> Regularly review plan administration, investment performance, and fees to ensure they remain competitive and appropriate.</li>
+                    <li><strong>Diversify investments.</strong> Offer a range of investment options so participants can build diversified portfolios aligned with their goals.</li>
+                    <li><strong>Disclose information accurately.</strong> Provide participants with clear, honest information about fees, investment options, and their rights.</li>
+                </ul>
+
+                <p>
+                    Importantly, this duty applies to your personal conduct and decision-making, not just the plan's overall structure. If you fail to ask the right questions, document your decisions, or monitor costs, you've potentially breached your fiduciary duty.
+                </p>
+
+                <h2>The Shocking Truth About Fiduciary Liability</h2>
+
+                <p>
+                    Under ERISA, plan sponsors (usually the company or a designated committee) can be held personally liable for plan losses. This means your personal assets could be at risk—not just the company's. Additionally, ERISA imposes strict liability in some cases, meaning you don't have to intentionally act wrong; negligence is enough. You could lose a lawsuit even if you thought you were doing the right thing.
+                </p>
+
+                <p>
+                    The Department of Labor takes this seriously. The DOL has consistently emphasized that fiduciary duties don't diminish—they increase with time. The longer a plan goes without a formal review or the more outdated a plan's structure becomes, the greater the fiduciary exposure. Recent DOL enforcement actions have targeted plans with high fees, antiquated investment options, and weak monitoring practices.
+                </p>
+
+                <h2>Recent Lawsuits and What They Tell Us</h2>
+
+                <p>
+                    The past decade has seen a surge in litigation against plan sponsors for breach of fiduciary duty. While lawsuits can be complex, they reveal patterns about what triggers DOL scrutiny and jury decisions.
+                </p>
+
+                <h3>The Fee-Based Litigation Wave</h3>
+
+                <p>
+                    A significant number of lawsuits allege that plan sponsors allowed excessive fees, particularly mutual fund expense ratios that exceeded cheaper alternatives. In several notable class actions, judges found that fiduciaries who failed to offer lower-cost share classes (like institutional or R-class shares) or who failed to monitor fund performance relative to alternatives were breaching their duty.
+                </p>
+
+                <p>
+                    The key insight: it's not enough to offer "reasonable" investment options. You must offer the most cost-effective versions of those options. If your recordkeeper offers R-class mutual funds at 0.35% expense ratio when institutional shares of the same fund cost 0.05%, you may have fiduciary exposure.
+                </p>
+
+                <h3>The Advisor Selection Problem</h3>
+
+                <p>
+                    Another wave of litigation targets plans where sponsors selected advisors without competitive bidding or proper documentation. In several cases, judges found that continuing to use an advisor who proposed limited alternatives, performed limited benchmarking, or didn't compare fees to market rates constituted breach of duty.
+                </p>
+
+                <p>
+                    The lesson: selecting advisors and vendors requires a formal process—documented request for proposals, fee comparisons, and clear criteria. "We've always used them" or "They're reputable" are not sufficient fiduciary rationales.
+                </p>
+
+                <h3>The Monitoring Failure Standard</h3>
+
+                <p>
+                    Perhaps most concerning for HR directors, courts have held sponsors liable for failing to monitor—even when the sponsor didn't cause the harm. For example, if your recordkeeper's administrative fees increased substantially but you didn't review it, you could be liable for the overage. The legal standard doesn't require you to catch every problem; it requires reasonable monitoring processes.
+                </p>
+
+                <h2>How to Protect Your Organization</h2>
+
+                <p>
+                    ERISA compliance doesn't require perfection, but it requires a documented, deliberate process. Here are the critical steps:
+                </p>
+
+                <h3>Step 1: Establish a Formal Plan Committee</h3>
+
+                <p>
+                    Create a documented fiduciary committee (even if it's just you plus one other person) that meets regularly to discuss plan matters. Minutes documenting discussions, decisions, and rationales are critical evidence of prudent process if you're ever questioned by the DOL or in litigation.
+                </p>
+
+                <h3>Step 2: Benchmark Plan Costs Annually</h3>
+
+                <p>
+                    At minimum annually, and certainly every three years, commission an independent cost benchmark analysis from a firm like NEPC, Callan, or similar. This analysis should compare your plan's total costs (including all embedded fees) to similar-sized plans in your industry. Document the results and your response to them.
+                </p>
+
+                <h3>Step 3: Solicit Competitive Proposals Every 3-5 Years</h3>
+
+                <p>
+                    Even if you don't plan to change providers, request proposals from at least two competitors. This accomplishes two things: (1) you'll validate that your current fees are competitive, and (2) you'll have documented evidence that you considered alternatives. Both are powerful fiduciary defenses.
+                </p>
+
+                <h3>Step 4: Review Investment Options Annually</h3>
+
+                <p>
+                    Ensure your plan offers low-cost share classes. If your plan holds R-class mutual funds, institutional or Admiral shares of the same fund are usually available at lower cost. Offering higher-cost shares when lower-cost alternatives exist is a documented liability exposure.
+                </p>
+
+                <h3>Step 5: Document Everything</h3>
+
+                <p>
+                    Your best defense against fiduciary liability is a clear paper trail showing that you asked informed questions, considered alternatives, and made deliberate decisions. Document meeting minutes, cost analyses, proposals reviewed, and the rationale for decisions made.
+                </p>
+
+                <h2>What Happens If You Don't Act?</h2>
+
+                <p>
+                    Failing to establish fiduciary processes puts you at significant risk. Beyond legal liability, there are practical consequences: regulators and plaintiff attorneys specifically target plans with weak governance. The cost of defending a lawsuit—even one you ultimately win—can exceed $500,000 in legal fees. Beyond that, settlement amounts in fee-based litigation have ranged from thousands for small plans to millions for large ones.
+                </p>
+
+                <p>
+                    More importantly, your fiduciary failures directly harm employees. Excessive fees compound over decades, reducing retirement security for the people who depend on your plan.
+                </p>
+
+                <div class="cta-box">
+                    <h3>Strengthen Your Fiduciary Position</h3>
+                    <p>Get a free ERISA compliance review and fiduciary process assessment. We'll identify gaps and outline steps to protect your organization.</p>
+                    <a href="/#contact" class="cta-button">Schedule Compliance Review</a>
+                </div>
+
+                <p>
+                    <strong>Final Thought:</strong> Being a fiduciary requires ongoing vigilance, not one-time effort. Regular monitoring, competitive benchmarking, and documented decision-making are the three pillars of fiduciary protection. Start with one: if your plan hasn't been formally reviewed in three or more years, that's your first action step. A comprehensive review will identify gaps and establish the foundation for compliant, prudent plan management going forward.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AdvisorNav. All rights reserved.</p>
+        <p>Helping HR directors optimize 401(k) plans and ensure ERISA compliance.</p>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "What HR Directors Need to Know About ERISA Fiduciary Liability",
+        "description": "Understanding ERISA fiduciary duty is essential for HR directors managing 401(k) plans. Learn what fiduciary liability means, recent lawsuits, and how to protect your organization.",
+        "image": "https://advisornav.com/og-image.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "AdvisorNav"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "AdvisorNav",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://advisornav.com/logo.png"
+            }
+        },
+        "datePublished": "2026-03-15",
+        "dateModified": "2026-03-15"
+    }
+    </script>
+</body>
+</html>

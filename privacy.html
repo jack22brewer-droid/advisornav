@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — AdvisorNav</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0a1628;
+            --gold: #c9a84c;
+            --font-sans: 'Inter', sans-serif;
+            --font-serif: 'Playfair Display', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            font-family: var(--font-sans);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 22, 40, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-cta {
+            background: var(--gold);
+            color: var(--navy);
+            padding: 0.6rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .nav-cta:hover {
+            background: #b8954a;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 80px;
+            padding: 3rem 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            color: var(--navy);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .effective-date {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: var(--navy);
+        }
+
+        a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--navy);
+            color: white;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: var(--gold);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="/" class="logo">AdvisorNav</a>
+            <ul class="nav-links">
+                <li><a href="/insights">Insights</a></li>
+            </ul>
+        </div>
+        <a href="/" class="nav-cta">Take the Assessment</a>
+    </nav>
+
+    <main>
+        <h1>Privacy Policy</h1>
+        <p class="effective-date">Effective date: March 19, 2026</p>
+
+        <h2>Information We Collect</h2>
+        <p>AdvisorNav collects information to deliver our assessment service and connect you with financial advisors. We collect:</p>
+        <ul>
+            <li><strong>Personal Information:</strong> Your name, email address, and phone number when you sign up or interact with our service</li>
+            <li><strong>Assessment Responses:</strong> Your answers to the financial advisor assessment questionnaire</li>
+            <li><strong>Technical Data:</strong> Automatic information collected when you use AdvisorNav, including IP address, browser type, pages visited, time spent on pages, and referring URLs</li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <p>We use the information we collect to:</p>
+        <ul>
+            <li>Calculate and deliver your personalized advisor assessment score</li>
+            <li>Connect you with qualified financial advisors based on your assessment results</li>
+            <li>Send you communications about your assessment and advisor matches</li>
+            <li>Improve and optimize our service</li>
+            <li>Comply with legal obligations and protect against fraud</li>
+        </ul>
+
+        <h2>How We Share Your Information</h2>
+        <p><strong>With Advisors:</strong> When you request a connection with a financial advisor, we share your name, contact information, and assessment results with that advisor so they can follow up with you.</p>
+        <p><strong>Service Providers:</strong> We use Netlify to host and deliver our service. Netlify has access to technical data necessary to operate the platform. We maintain data processing agreements to ensure your information is protected.</p>
+        <p><strong>Legal Obligations:</strong> We may disclose information if required by law or if we believe in good faith that disclosure is necessary to comply with legal processes or protect our rights.</p>
+        <p><strong>No Selling:</strong> We do not sell, rent, or trade your personal information to third parties for marketing purposes.</p>
+
+        <h2>Security</h2>
+        <p>AdvisorNav uses industry-standard security measures to protect your information. All data transmitted through AdvisorNav is encrypted using HTTPS. However, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security of your information, but we maintain reasonable safeguards to protect against unauthorized access.</p>
+
+        <h2>Your Privacy Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li><strong>Access:</strong> Request access to the personal information we have about you</li>
+            <li><strong>Correction:</strong> Request that we correct or update any inaccurate information</li>
+            <li><strong>Deletion:</strong> Request deletion of your personal information, subject to certain legal obligations</li>
+            <li><strong>Opt-Out:</strong> Opt out of marketing communications at any time by clicking the unsubscribe link in our emails or contacting us directly</li>
+        </ul>
+
+        <h2>California Consumer Privacy Act (CCPA)</h2>
+        <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information is collected, the right to delete personal information, and the right to opt-out of the sale of personal information. To exercise these rights, please contact us at <a href="mailto:privacy@advisornav.com">privacy@advisornav.com</a>.</p>
+
+        <h2>Data Retention</h2>
+        <p>We retain your personal information for as long as necessary to provide our services and fulfill the purposes outlined in this policy. If you request deletion of your account, we will remove your personal information within 30 days, except where we are required by law to retain certain data.</p>
+
+        <h2>Changes to Privacy Policy</h2>
+        <p>AdvisorNav may update this Privacy Policy at any time. We will notify you of any material changes by updating the effective date of this policy. Continued use of AdvisorNav following changes constitutes your acceptance of the updated Privacy Policy.</p>
+
+        <h2>Contact</h2>
+        <p>If you have questions or concerns about our privacy practices, or wish to exercise your privacy rights, please contact us at <a href="mailto:privacy@advisornav.com">privacy@advisornav.com</a>.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AdvisorNav. All rights reserved.</p>
+        <p><a href="/terms">Terms of Service</a> | <a href="/privacy">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — AdvisorNav</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0a1628;
+            --gold: #c9a84c;
+            --font-sans: 'Inter', sans-serif;
+            --font-serif: 'Playfair Display', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            font-family: var(--font-sans);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 22, 40, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-cta {
+            background: var(--gold);
+            color: var(--navy);
+            padding: 0.6rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .nav-cta:hover {
+            background: #b8954a;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 80px;
+            padding: 3rem 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            color: var(--navy);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .effective-date {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: var(--navy);
+        }
+
+        a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--navy);
+            color: white;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: var(--gold);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="/" class="logo">AdvisorNav</a>
+            <ul class="nav-links">
+                <li><a href="/insights">Insights</a></li>
+            </ul>
+        </div>
+        <a href="/" class="nav-cta">Take the Assessment</a>
+    </nav>
+
+    <main>
+        <h1>Terms of Service</h1>
+        <p class="effective-date">Effective date: March 19, 2026</p>
+
+        <h2>About AdvisorNav</h2>
+        <p>AdvisorNav is a financial advisor matching service designed to connect individuals with qualified financial professionals. <strong>AdvisorNav is not a registered investment adviser, broker-dealer, or financial institution.</strong> We do not provide investment advice, manage accounts, or execute transactions on behalf of users.</p>
+
+        <h2>Not Financial Advice</h2>
+        <p>The information provided through AdvisorNav, including assessment scores and advisor recommendations, does not constitute financial advice, investment advice, or professional recommendations. Any information provided is for educational and informational purposes only. Users should conduct their own research and consult with licensed financial professionals before making any financial decisions.</p>
+
+        <h2>Advisor Connections</h2>
+        <p>AdvisorNav facilitates introductions between users and financial advisors. We do not endorse, guarantee, or assume responsibility for the services, conduct, or recommendations of connected advisors. Users are responsible for evaluating advisors and their qualifications before engaging their services. Advisors are independent third parties, and any agreements or services with advisors are solely between the user and the advisor.</p>
+
+        <h2>User Responsibilities</h2>
+        <p>Users agree to:</p>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.2rem;">
+            <li>Provide accurate and truthful information in assessments and forms</li>
+            <li>Not use AdvisorNav for unlawful purposes or to violate any applicable laws</li>
+            <li>Respect the intellectual property rights of AdvisorNav</li>
+            <li>Not attempt to reverse-engineer, hack, or interfere with AdvisorNav services</li>
+        </ul>
+
+        <h2>Intellectual Property</h2>
+        <p>All content, design, and intellectual property on AdvisorNav, including but not limited to the assessment methodology, software, and branding, are owned by or licensed to AdvisorNav and protected by applicable copyright and trademark laws. Users may not reproduce, distribute, or use any content without express written permission.</p>
+
+        <h2>Limitation of Liability</h2>
+        <p>To the fullest extent permitted by law, AdvisorNav shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the service, including but not limited to financial losses, investment losses, or damages resulting from advice or services provided by connected advisors.</p>
+
+        <h2>Disclaimer of Warranties</h2>
+        <p>AdvisorNav is provided "as is" without warranties of any kind, express or implied. We do not warrant that the service will be uninterrupted, error-free, or meet your specific needs. Assessment results are estimates based on provided information and should not be relied upon as precise predictors of financial outcomes.</p>
+
+        <h2>Communications</h2>
+        <p>By using AdvisorNav, you consent to receive communications from us, including emails about your assessment results, advisor introductions, and service updates. You can manage communication preferences through your account settings or by contacting us at <a href="mailto:legal@advisornav.com">legal@advisornav.com</a>.</p>
+
+        <h2>Indemnification</h2>
+        <p>Users agree to indemnify and hold harmless AdvisorNav and its owners, operators, and employees from any claims, damages, or expenses (including legal fees) arising from the user's use of the service, violation of these terms, or infringement of any third-party rights.</p>
+
+        <h2>Governing Law</h2>
+        <p>These Terms of Service shall be governed by and construed in accordance with the laws of the State of Georgia, without regard to its conflict of laws principles. Any disputes shall be subject to the exclusive jurisdiction of the courts located in Georgia.</p>
+
+        <h2>Changes to Terms</h2>
+        <p>AdvisorNav reserves the right to modify these terms at any time. Continued use of the service following any changes constitutes acceptance of the updated terms. We encourage you to review these terms periodically.</p>
+
+        <h2>Severability</h2>
+        <p>If any provision of these terms is found to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.</p>
+
+        <h2>Contact</h2>
+        <p>For questions regarding these Terms of Service, please contact us at <a href="mailto:legal@advisornav.com">legal@advisornav.com</a>.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AdvisorNav. All rights reserved.</p>
+        <p><a href="/terms">Terms of Service</a> | <a href="/privacy">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
