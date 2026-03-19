@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Benchmark Your 401(k) Plan Fees | AdvisorNav</title>
+    <meta name="description" content="Learn how to compare your 401(k) plan fees against industry benchmarks and find out if your employees are overpaying for retirement savings.">
+    <meta property="og:title" content="How to Benchmark Your 401(k) Plan Fees | AdvisorNav">
+    <meta property="og:description" content="Learn how to compare your 401(k) plan fees against industry benchmarks and find out if your employees are overpaying for retirement savings.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://advisornav.com/blog/how-to-benchmark-your-401k-plan-fees.html">
+    <meta property="og:image" content="https://advisornav.com/og-image.jpg">
+    <meta property="article:author" content="AdvisorNav">
+    <meta property="article:published_time" content="2026-03-19">
+    <link rel="canonical" href="https://advisornav.com/blog/how-to-benchmark-your-401k-plan-fees.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0a1628;
+            --navy-light: #0f1f3a;
+            --navy-mid: #162a4a;
+            --gold: #c9a84c;
+            --gold-light: #d4b96a;
+            --white: #ffffff;
+            --gray-100: #e8e6e1;
+            --gray-300: #b0ada5;
+            --gray-500: #6b6860;
+            --font-sans: 'Inter', sans-serif;
+            --font-serif: 'Playfair Display', serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--white);
+            background-color: var(--navy);
+            line-height: 1.8;
+        }
+
+        nav {
+            background-color: var(--navy-light);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--navy-mid);
+        }
+
+        .nav-logo {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+
+        .nav-logo:hover { color: var(--gold-light); }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover { color: var(--gold-light); }
+
+        .article-hero {
+            background: linear-gradient(135deg, var(--navy-mid) 0%, var(--navy-light) 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .article-hero h1 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .article-hero .meta {
+            color: var(--gray-300);
+            font-size: 0.95rem;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        article h2 {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            color: var(--gold);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        article h3 {
+            font-size: 1.25rem;
+            color: var(--gold-light);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        article p {
+            color: var(--gray-100);
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
+
+        article ul, article ol {
+            color: var(--gray-100);
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
+
+        article li {
+            margin-bottom: 0.5rem;
+        }
+
+        .callout {
+            background-color: var(--navy-light);
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .callout p {
+            color: var(--white);
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, var(--navy-mid) 0%, var(--navy-light) 100%);
+            border: 2px solid var(--gold);
+            border-radius: 12px;
+            padding: 2.5rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .cta-box h3 {
+            font-family: var(--font-serif);
+            color: var(--white);
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .cta-box p {
+            color: var(--gray-100);
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--gold);
+            color: var(--navy);
+            padding: 0.875rem 2.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--gold-light);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: var(--navy-light);
+            border-top: 1px solid var(--navy-mid);
+            padding: 2rem;
+            text-align: center;
+            color: var(--gray-300);
+            font-size: 0.9rem;
+        }
+
+        footer p { margin: 0.5rem 0; }
+
+        @media (max-width: 768px) {
+            .article-hero h1 { font-size: 1.75rem; }
+            article { padding: 2rem 1rem; }
+            .nav-links { gap: 1.5rem; font-size: 0.85rem; }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How to Benchmark Your 401(k) Plan Fees",
+        "author": {"@type": "Organization", "name": "AdvisorNav"},
+        "datePublished": "2026-03-19",
+        "publisher": {"@type": "Organization", "name": "AdvisorNav", "url": "https://advisornav.com"}
+    }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="/" class="nav-logo">AdvisorNav</a>
+        <ul class="nav-links">
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/#assessment" class="cta-link">Take Assessment</a></li>
+        </ul>
+    </nav>
+
+    <section class="article-hero">
+        <h1>How to Benchmark Your 401(k) Plan Fees</h1>
+        <p class="meta">March 19, 2026 &bull; 6 min read</p>
+    </section>
+
+    <article>
+        <p>If you're an HR director or business owner responsible for your company's 401(k) plan, there's one question that should keep you up at night: are your employees paying too much in fees? The answer might surprise you — and it could expose your company to serious fiduciary liability.</p>
+
+        <p>Fee benchmarking isn't just a best practice. Under ERISA, plan fiduciaries have a legal obligation to ensure plan fees are reasonable for the services provided. Failing to do so has led to multi-million dollar lawsuits against companies of all sizes.</p>
+
+        <h2>What Are 401(k) Plan Fees?</h2>
+
+        <p>Before you can benchmark, you need to understand the three main categories of fees in every 401(k) plan:</p>
+
+        <h3>1. Investment Management Fees (Expense Ratios)</h3>
+        <p>These are charged by the mutual funds or investment options in your plan's lineup. They're expressed as a percentage of assets — for example, a fund with a 0.75% expense ratio charges $7.50 per year for every $1,000 invested. The industry average for 401(k) plans hovers around 0.50% to 1.00%, but index funds can be as low as 0.02% to 0.10%.</p>
+
+        <h3>2. Administrative Fees</h3>
+        <p>These cover recordkeeping, compliance testing, Form 5500 preparation, and day-to-day plan operations. They can be charged as a flat dollar amount per participant, a percentage of assets, or a combination. For a plan with 50-200 participants, reasonable administrative fees typically range from $30 to $80 per participant per year.</p>
+
+        <h3>3. Advisor Fees</h3>
+        <p>If your plan has a financial advisor (and it should), their fees cover investment selection, fiduciary oversight, and employee education. These typically range from 0.25% to 1.00% of plan assets, depending on plan size and service level.</p>
+
+        <div class="callout">
+            <p>Key insight: The total "all-in" cost of a well-run 401(k) plan should generally fall between 0.75% and 1.50% of plan assets. If your plan's total fees exceed 1.50%, it's time for a closer look.</p>
+        </div>
+
+        <h2>How to Benchmark: A Step-by-Step Process</h2>
+
+        <h3>Step 1: Gather Your Fee Disclosure Documents</h3>
+        <p>Every plan should receive two key documents annually: the 408(b)(2) fee disclosure from your service providers and the 404(a)(5) participant fee disclosure. These documents break down exactly what you're paying and to whom. If you can't find them, that's a red flag in itself.</p>
+
+        <h3>Step 2: Calculate Your All-In Cost</h3>
+        <p>Add up every fee category — investment expenses, administrative charges, advisor compensation, and any transaction fees. Express this as both a total dollar amount and a percentage of plan assets. This gives you your "all-in" cost for comparison purposes.</p>
+
+        <h3>Step 3: Compare Against Industry Data</h3>
+        <p>Use benchmarking resources to compare your fees against plans of similar size. The key variable is plan assets — a $2 million plan will naturally have higher per-participant costs than a $50 million plan because fixed costs are spread across fewer dollars.</p>
+
+        <p>General benchmarks by plan size:</p>
+        <ul>
+            <li><strong>Under $1M in assets:</strong> All-in costs of 1.50% to 2.50% are common, but there's significant room for optimization</li>
+            <li><strong>$1M to $10M:</strong> Target 1.00% to 1.75% all-in</li>
+            <li><strong>$10M to $50M:</strong> Target 0.75% to 1.25% all-in</li>
+            <li><strong>$50M+:</strong> Target 0.50% to 0.90% all-in</li>
+        </ul>
+
+        <h3>Step 4: Evaluate Services, Not Just Cost</h3>
+        <p>The cheapest plan isn't always the best plan. You need to weigh fees against the quality of services received. A plan paying 1.25% all-in with a proactive advisor who conducts quarterly reviews, provides employee education, and monitors fiduciary compliance may be a better value than a plan paying 0.90% with minimal advisor involvement.</p>
+
+        <h3>Step 5: Document Everything</h3>
+        <p>This is crucial for ERISA compliance. Document your benchmarking process, the data sources you used, your analysis, and your conclusions. If you decide current fees are reasonable — or if you decide to make changes — put it in writing. This documentation is your best defense if your fee structure is ever challenged.</p>
+
+        <h2>Red Flags That Your Fees Are Too High</h2>
+
+        <p>Watch for these warning signs during your benchmarking process:</p>
+
+        <ul>
+            <li><strong>Revenue sharing over 0.25%:</strong> Revenue sharing (where fund companies kick back a portion of fees to the recordkeeper) isn't inherently bad, but excessive amounts inflate costs without adding value</li>
+            <li><strong>No index fund options:</strong> If your plan only offers actively managed funds, participants are likely paying unnecessary premiums. Every modern plan should include low-cost index options</li>
+            <li><strong>Bundled pricing with no transparency:</strong> If your provider can't clearly break down what each fee component covers, that's a problem. ERISA requires fee transparency</li>
+            <li><strong>Same provider for 5+ years with no review:</strong> Loyalty doesn't lower fees. If you haven't benchmarked in several years, market prices have almost certainly dropped while yours stayed the same</li>
+        </ul>
+
+        <h2>What to Do If Your Fees Are Too High</h2>
+
+        <p>If your benchmarking reveals above-market fees, you have several options. You can negotiate with your current providers — armed with benchmark data, many will reduce fees to keep your business. You can issue an RFP (Request for Proposal) to competing providers to get market-rate quotes. Or you can work with an independent 401(k) advisor who can manage the entire process and ensure you're meeting your fiduciary obligations.</p>
+
+        <p>The most important thing is to take action. Under ERISA, knowing your fees are excessive and doing nothing about it creates the greatest fiduciary risk of all.</p>
+
+        <div class="cta-box">
+            <h3>Not Sure Where Your Plan Stands?</h3>
+            <p>Take our free 2-minute assessment to see how your 401(k) plan compares to industry benchmarks.</p>
+            <a href="/#assessment" class="cta-button">Get Your Free Assessment</a>
+        </div>
+
+        <p><em>AdvisorNav helps HR directors and business owners optimize their 401(k) plans through independent advisory services, fee benchmarking, and fiduciary compliance support.</em></p>
+    </article>
+
+    <footer>
+        <p>&copy; 2026 AdvisorNav. All rights reserved.</p>
+        <p>Helping HR directors optimize 401(k) plans and ensure ERISA compliance.</p>
+    </footer>
+</body>
+</html>
