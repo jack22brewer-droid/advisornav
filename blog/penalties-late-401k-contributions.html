@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about 401(k) contribution penalties, including DOL fines up to $250/day and IRS excise taxes. Understand consequences and how to avoid late deposits.">
+    <meta name="keywords" content="401k penalties, late contributions, DOL fines, IRS excise tax, payroll deductions, fiduciary liability">
+    <meta name="author" content="AdvisorNav">
+    <meta property="og:title" content="What Are the Penalties for Late 401(k) Contributions?">
+    <meta property="og:description" content="Discover the serious financial and legal penalties for late 401(k) contributions, including specific dollar amounts and real-world scenarios.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://advisornav.com/blog/penalties-late-401k-contributions.html">
+    <meta property="og:image" content="https://advisornav.com/og-image-401k-penalties.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://advisornav.com/blog/penalties-late-401k-contributions.html">
+    <title>What Are the Penalties for Late 401(k) Contributions? | AdvisorNav Blog</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0a1628;
+            --navy-light: #0f1f3a;
+            --navy-mid: #162a4a;
+            --gold: #c9a84c;
+            --gold-light: #d4b96a;
+            --font-sans: 'Inter', sans-serif;
+            --font-serif: 'Playfair Display', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--navy);
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--navy-light);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #e5e7eb;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--navy-mid) 0%, var(--navy-light) 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .hero h1 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero-meta {
+            color: #d1d5db;
+            font-size: 0.95rem;
+        }
+
+        .hero-meta span {
+            margin-right: 2rem;
+        }
+
+        /* Article Container */
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Quick Answer Callout */
+        .quick-answer {
+            background-color: var(--navy-light);
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem 2rem;
+            border-radius: 0 12px 12px 0;
+            margin-bottom: 3rem;
+            color: #f3f4f6;
+        }
+
+        .quick-answer h2 {
+            font-family: var(--font-serif);
+            color: var(--gold);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .quick-answer p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Article Content */
+        article h2 {
+            font-family: var(--font-serif);
+            color: var(--gold);
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        article h3 {
+            font-family: var(--font-serif);
+            color: var(--gold-light);
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        article p {
+            color: #f3f4f6;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        article ul, article ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #f3f4f6;
+        }
+
+        article li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+
+        /* Table */
+        .penalty-table {
+            width: 100%;
+            margin: 2rem 0;
+            border-collapse: collapse;
+            background-color: var(--navy-light);
+            border: 1px solid var(--navy-mid);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .penalty-table th {
+            background-color: var(--navy-mid);
+            color: var(--gold);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .penalty-table td {
+            padding: 1rem;
+            color: #f3f4f6;
+            border-bottom: 1px solid #374151;
+        }
+
+        .penalty-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .penalty-table tr:nth-child(even) {
+            background-color: rgba(22, 42, 74, 0.5);
+        }
+
+        /* Scenario Boxes */
+        .scenario {
+            background-color: var(--navy-light);
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem 2rem;
+            border-radius: 0 12px 12px 0;
+            margin: 2rem 0;
+            color: #f3f4f6;
+        }
+
+        .scenario strong {
+            color: var(--gold);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin-top: 3rem;
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #374151;
+            padding-bottom: 1.5rem;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h4 {
+            font-family: var(--font-serif);
+            color: var(--gold);
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .faq-item p {
+            color: #f3f4f6;
+            font-size: 0.95rem;
+        }
+
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, var(--navy-mid) 0%, var(--navy-light) 100%);
+            border: 2px solid var(--gold);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            color: var(--gold);
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem;
+        }
+
+        .cta-box p {
+            color: #f3f4f6;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--gold);
+            color: var(--navy);
+            padding: 0.875rem 2rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: var(--gold-light);
+            transform: translateY(-2px);
+        }
+
+        /* Internal Links */
+        a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--gold-light);
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--navy-light);
+            padding: 2rem;
+            text-align: center;
+            color: #d1d5db;
+            border-top: 1px solid #374151;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: #d1d5db;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.85rem;
+            }
+
+            article h2 {
+                font-size: 1.5rem;
+            }
+
+            .penalty-table {
+                font-size: 0.9rem;
+            }
+
+            .penalty-table th, .penalty-table td {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8YM4H2D6B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-S8YM4H2D6B');
+    </script>
+    <!-- JSON-LD Schemas -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "What Are the Penalties for Late 401(k) Contributions?",
+        "description": "Learn about 401(k) contribution penalties, including DOL fines up to $250/day and IRS excise taxes. Understand consequences and how to avoid late deposits.",
+        "image": "https://advisornav.com/og-image-401k-penalties.jpg",
+        "datePublished": "2026-04-05",
+        "dateModified": "2026-04-05",
+        "author": {
+            "@type": "Organization",
+            "name": "AdvisorNav"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "AdvisorNav",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://advisornav.com/logo.png"
+            }
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the maximum daily penalty for late 401(k) contributions?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The Department of Labor can assess civil penalties of up to $250 per day for each late contribution. For a company with 50 employees and multiple late deposits, this can quickly accumulate to substantial amounts."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "When are 401(k) contributions considered late?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Contributions are considered late if they are not deposited into the 401(k) plan by the earliest of: (1) 15 business days after the end of the month in which they were withheld, or (2) according to the payroll frequency specified in your plan documents."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the IRS excise tax for prohibited transactions in 401(k) plans?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The IRS imposes a 15% excise tax on prohibited transactions. If an employer fails to remit contributions within the required timeframe, it may be treated as a prohibited transaction, resulting in both the 15% excise tax and potential additional penalties."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can employees sue if their 401(k) contributions are deposited late?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Under ERISA, employees can pursue legal action against employers for fiduciary breaches. Late contributions mean lost investment earnings, and employees can claim damages for the difference between what their account would have been worth with timely deposits versus what they actually received."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="nav-logo">AdvisorNav</a>
+        <ul class="nav-links">
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="https://moneycheckupai.com">Take Assessment</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>What Are the Penalties for Late 401(k) Contributions?</h1>
+        <div class="hero-meta">
+            <span>Published: April 5, 2026</span>
+            <span>Reading time: 6 minutes</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Quick Answer -->
+        <div class="quick-answer">
+            <h2>Quick Answer</h2>
+            <p>Late 401(k) contributions can result in serious financial penalties. The Department of Labor (DOL) can assess civil penalties of <strong>up to $250 per day per late contribution</strong>. The IRS imposes an <strong>excise tax of 15%</strong> on prohibited transactions related to failed deposits. Beyond regulatory fines, delayed deposits mean employees lose valuable investment earnings on their contributions, creating potential ERISA liability and lawsuits. For a mid-sized company, even a single month of late deposits can trigger penalties exceeding $10,000, plus the cost of litigation and reputational damage.</p>
+        </div>
+
+        <article>
+            <h2>Understanding 401(k) Contribution Deadlines</h2>
+            <p>One of the most critical responsibilities for employers sponsoring 401(k) plans is ensuring that employee salary deferrals reach the plan's trust account on time. Many business owners don't realize that there are strict federal deadlines for depositing these contributions, and missing them can trigger substantial penalties from both the Department of Labor and the Internal Revenue Service.</p>
+
+            <p>The standard requirement is that employee deferrals must be deposited by the earliest of: (1) the 15th business day of the month following the month in which the amounts were withheld from employee paychecks, or (2) the date specified in your plan documents. For most plans, this means payroll contributions withheld in January must be deposited by February 15th.</p>
+
+            <p>Many HR professionals and business owners are surprised to learn how narrow this window is. In practice, this gives you roughly one month from the date wages are withheld to deposit the funds. A delay of even a few days beyond the deadline can trigger penalties.</p>
+
+            <h2>DOL Penalties: $250 Per Day, Per Contribution</h2>
+            <p>When the Department of Labor identifies a late 401(k) contribution deposit, they have significant enforcement authority. Under ERISA (the Employee Retirement Income Security Act), the DOL can assess civil penalties of <strong>up to $250 per day</strong> for each violation.</p>
+
+            <p>Here's what makes this particularly expensive: if you have 30 employees and miss the deadline by 10 days, that's potentially 30 contributions × 10 days × $250 = $75,000 in penalties. This calculation doesn't require a pattern of violations—a single month of late deposits can generate six-figure fines for larger companies.</p>
+
+            <p>The DOL considers several factors when determining actual penalty amounts:</p>
+            <ul>
+                <li>The number of employees affected</li>
+                <li>The length of the delay</li>
+                <li>Whether the violation was intentional or inadvertent</li>
+                <li>The company's history of compliance</li>
+                <li>The amount of money involved</li>
+            </ul>
+
+            <p>Even if a company has a previously clean record, a significant delay can result in substantial penalties. The DOL has moved aggressively in recent years to enforce these requirements, particularly after the 2020-2021 economic disruptions when some companies struggled with cash flow.</p>
+
+            <h2>IRS Excise Tax on Prohibited Transactions</h2>
+            <p>Beyond the DOL penalties, the IRS gets involved when late contributions are treated as prohibited transactions. While not every late deposit automatically triggers an excise tax, significant delays or patterns of non-compliance can result in the IRS assessing a <strong>15% excise tax</strong> on the amounts involved.</p>
+
+            <p>Additionally, the IRS may assess penalties for failure to file Form 5330 (Return of Excise Taxes Related to Employee Benefit Plans) or other required filings. These penalties can range from $25 to $100 per day of non-filing, further compounding the financial damage.</p>
+
+            <p>The most serious scenario occurs when late contributions are recharacterized as employer contributions rather than employee deferrals. This creates additional tax complications and potential double taxation for affected employees.</p>
+
+            <h2>Lost Investment Earnings and Employee Damages</h2>
+            <p>While regulatory penalties are significant, the economic harm to employees from late deposits often exceeds the fines themselves. When contributions are delayed, employees miss out on investment growth during that period.</p>
+
+            <p>Consider this example: An employee with $500 in monthly deferrals delayed by 30 days in a growth-oriented portfolio averaging 8% annual returns loses approximately $3.33 in investment earnings just from that single month's delay. Over a 30-year career with consistent late deposits, this compounds to thousands of dollars in lost retirement savings per employee.</p>
+
+            <p>Under ERISA, employees and their representatives can sue companies for these losses. Class action lawsuits have become increasingly common, with some settlements exceeding $100 million for large employers with widespread deposit delays.</p>
+
+            <h2>Real-World Penalty Scenarios</h2>
+
+            <div class="scenario">
+                <h3>Scenario 1: Manufacturing Company (Sarah's Situation)</h3>
+                <p><strong>Sarah</strong> is the HR Director at a 50-person manufacturing firm. In January 2025, the company experienced temporary cash flow challenges and delayed their payroll contributions by 15 days (missing the February 15th deadline, depositing instead on March 1st).</p>
+                <p>The DOL conducted an audit during a routine compliance review:</p>
+                <ul>
+                    <li>50 employees × 15 days late × $250/day = $187,500 in potential DOL penalties</li>
+                    <li>Lost investment earnings across all accounts: approximately $18,000</li>
+                    <li>Legal fees to address the violation: $12,000</li>
+                    <li>Costs to implement monitoring systems and retroactive corrections: $8,000</li>
+                </ul>
+                <p>The company negotiated a settlement of $95,000 in penalties, plus costs of correcting employee accounts and implementing oversight procedures. The reputational damage made recruiting and retaining talent more difficult.</p>
+            </div>
+
+            <div class="scenario">
+                <h3>Scenario 2: Professional Services Firm (Michael's Situation)</h3>
+                <p><strong>Michael</strong> owns a 15-person accounting firm. His payroll processor misconfigured the deposit schedule, and contributions were consistently deposited 8-10 days late for six consecutive months before anyone noticed.</p>
+                <p>An employee preparing her tax return noticed the late deposits and filed a complaint with the DOL:</p>
+                <ul>
+                    <li>6 months × 15 employees × 9 days average × $250 = $202,500 in DOL exposure</li>
+                    <li>IRS excise tax (15% on $18,000 total delayed): $2,700</li>
+                    <li>Class action lawsuit filed by 12 employees seeking lost earnings damages: $47,000 settlement</li>
+                    <li>Plan audit and remediation: $15,000</li>
+                </ul>
+                <p>Total cost: approximately $267,200, plus the time and stress of litigation. The firm also faced mandatory ERISA education and increased compliance oversight for three years.</p>
+            </div>
+
+            <h2>Timeline Comparison: Days Late vs. Penalty Exposure</h2>
+            <p>Here's a practical table showing penalty exposure for a company with 40 employees, assuming maximum DOL penalties:</p>
+
+            <table class="penalty-table">
+                <thead>
+                    <tr>
+                        <th>Days Late</th>
+                        <th>Employees Affected</th>
+                        <th>Total Exposure (40 employees)</th>
+                        <th>Realistic Settlement Range</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3-5 days</td>
+                        <td>40</td>
+                        <td>$30,000 - $50,000</td>
+                        <td>$8,000 - $15,000</td>
+                    </tr>
+                    <tr>
+                        <td>5-10 days</td>
+                        <td>40</td>
+                        <td>$50,000 - $100,000</td>
+                        <td>$15,000 - $35,000</td>
+                    </tr>
+                    <tr>
+                        <td>10-15 days</td>
+                        <td>40</td>
+                        <td>$100,000 - $150,000</td>
+                        <td>$30,000 - $60,000</td>
+                    </tr>
+                    <tr>
+                        <td>15+ days</td>
+                        <td>40</td>
+                        <td>$150,000 - $375,000+</td>
+                        <td>$50,000 - $150,000+</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>These figures assume first-time violations. For companies with repeated violations, the DOL may assess penalties at the maximum rate without negotiation.</p>
+
+            <h2>ERISA Fiduciary Liability</h2>
+            <p>It's important to understand that failing to make timely 401(k) contributions is a fiduciary breach under ERISA. Company officers and board members can be held personally liable for these breaches, not just the corporation itself.</p>
+
+            <p>Additionally, if the company is insured with a fiduciary liability policy, such claims may not be covered if the violation was deemed to have been intentional or resulted from gross negligence. This means executives could face personal legal and financial exposure.</p>
+
+            <p>Learn more about fiduciary responsibilities by reading our guide on <a href="/blog/what-hr-directors-need-to-know-about-erisa-fiduciary-liability.html">what HR directors need to know about ERISA fiduciary liability</a>.</p>
+
+            <h2>How to Prevent Late Contributions</h2>
+            <p>Given the severity of penalties, prevention is critical. Here are essential steps:</p>
+            <ul>
+                <li><strong>Calendar reminders:</strong> Set alerts at least 5 business days before the deadline</li>
+                <li><strong>Dedicated account:</strong> Maintain a separate bank account for payroll withholdings, making deposits impossible to accidentally skip</li>
+                <li><strong>Payroll processor review:</strong> Verify your payroll company's deposit schedule matches your plan's requirements</li>
+                <li><strong>Quarterly reconciliation:</strong> Have your plan administrator or accountant verify deposits against payroll records</li>
+                <li><strong>ERISA training:</strong> Ensure HR and finance staff understand the legal requirements and consequences</li>
+                <li><strong>Plan document review:</strong> Some plans allow extended deposit deadlines (Safe Harbor provisions); confirm what your plan allows</li>
+            </ul>
+
+            <p>Consider also reviewing your plan's fee structure, as inefficient investment options and high fees compound the problem of delayed contributions. Our article on <a href="/blog/how-to-benchmark-your-401k-plan-fees.html">how to benchmark your 401(k) plan fees</a> provides guidance on ensuring employees get maximum value from their accounts.</p>
+
+            <h2>Signs Your Company Needs a Compliance Review</h2>
+            <p>If any of these apply to your business, a comprehensive 401(k) plan review is warranted:</p>
+            <ul>
+                <li>You've changed payroll processors in the past two years</li>
+                <li>Your finance or HR department has high turnover</li>
+                <li>Your plan documents are more than 5 years old</li>
+                <li>You've experienced cash flow challenges</li>
+                <li>You're unsure about your exact deposit deadline</li>
+                <li>You've received any communications from the DOL or IRS</li>
+            </ul>
+
+            <p>For a deeper dive into when plans need attention, check out <a href="/blog/5-signs-your-company-needs-a-401k-plan-review.html">5 signs your company needs a 401(k) plan review</a>.</p>
+
+            <!-- CTA Box -->
+            <div class="cta-box">
+                <h3>Find Out What Your Business Is Missing</h3>
+                <p>Take our free 60-second Business Tax Checkup to identify potential compliance gaps and optimization opportunities in your 401(k) plan and broader retirement strategy.</p>
+                <a href="https://moneycheckupai.com" class="cta-button">Get Your Free Business Tax Checkup</a>
+            </div>
+
+            <h2>FAQ: Late 401(k) Contributions</h2>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <h4>What is the maximum daily penalty for late 401(k) contributions?</h4>
+                    <p>The Department of Labor can assess civil penalties of up to $250 per day for each late contribution. For a company with 50 employees and multiple late deposits, this can quickly accumulate to substantial amounts. A company with a 10-day delay across 50 employees faces potential penalties of $125,000.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>When are 401(k) contributions considered late?</h4>
+                    <p>Contributions are considered late if they are not deposited into the 401(k) plan by the earliest of: (1) 15 business days after the end of the month in which they were withheld, or (2) according to the payroll frequency specified in your plan documents. For most companies, this creates a deposit deadline of the 15th or 20th of the following month.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What is the IRS excise tax for prohibited transactions in 401(k) plans?</h4>
+                    <p>The IRS imposes a 15% excise tax on prohibited transactions. If an employer fails to remit contributions within the required timeframe, it may be treated as a prohibited transaction, resulting in both the 15% excise tax and potential additional penalties. The excise tax applies to the full amount of the late contribution.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Can employees sue if their 401(k) contributions are deposited late?</h4>
+                    <p>Yes. Under ERISA, employees can pursue legal action against employers for fiduciary breaches. Late contributions mean lost investment earnings, and employees can claim damages for the difference between what their account would have been worth with timely deposits versus what they actually received. These claims can be brought individually or as class actions, potentially exposing the company to six or seven-figure liability.</p>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AdvisorNav. All rights reserved.</p>
+        <p>AdvisorNav provides educational content about retirement plans and business tax strategies. This article is not legal or tax advice. Consult with qualified professionals before making decisions about your 401(k) plan.</p>
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/blog/">Blog</a>
+            <a href="https://moneycheckupai.com">Assessment</a>
+            <a href="/privacy/">Privacy</a>
+        </div>
+    </footer>
+</body>
+</html>
